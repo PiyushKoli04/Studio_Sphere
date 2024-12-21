@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroke Vision Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Stroke Vision Art</h1>
+      <div>
+        <input type="text" id="searchBar" placeholder="Search wallpapers..." oninput="filterWallpapers()">
+        <button id="searchButton" onclick="filterWallpapers()">Search</button>
+      </div>
+      <div id="filterContainer">
+        <button class="filterButton" onclick="filterWallpapersByCategory('all')">All</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('pc')">PC Wallpapers</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('mobile')">Mobile Wallpapers</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('free')">Free</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('premium')">Premium</button>
+      </div>
+      
+  </header>
+  <main id="wallpaperGallery">
+    <div class="wallpaper" data-category="pc,free">
+      <img src="edward elric.jpg" alt="Wallpaper 1">
+      <p> Edward Elric</p>
+      <a href="edward elric.jpg" download="wallpaper1.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="gojo.jpg" alt="Wallpaper 2">
+      <p> Gojo Saturo </p>
+      <a href="gojo.jpg" download="wallpaper2.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="levi1.jpg" alt="Wallpaper 3">
+      <p> Levi Ackerman </p>
+      <a href="levi1.jpg" download="wallpaper3.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+        <img src="Tanjiro Kamado.png" alt="Wallpaper 1">
+        <p>Tanjiro Kamado</p>
+        <a href="Tanjiro Kamado.png" download="wallpaper1.jpg">Download</a>
+    </div>
+      <div class="wallpaper" data-category="pc,free">
+        <img src="levi ackerman.png" alt="Wallpaper 2">
+        <p>Levi Ackerman</p>
+        <a href="levi ackerman.png" download="wallpaper2.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+        <img src="Natsu Dragneel .jpg" alt="Wallpaper 3">
+        <p>Natsu Dragneel</p>
+        <a href="Natsu Dragneel .jpg" download="wallpaper3.jpg">Download</a>
+    </div>
+    </div>
+        <div class="wallpaper" data-category="pc,free">
+        <img src="Tanjiro Kamado1.png" alt="Wallpaper 2">
+        <p>Tanjiro Kamado</p>
+        <a href="Tanjiro Kamado1.png" download="wallpaper2.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+        <img src="zoro.jpg" alt="Wallpaper 3">
+        <p>Zoro</p>
+        <a href="zoro.jpg" download="wallpaper3.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="warrior in moonlight.jpg" alt="Wallpaper 1">
+      <p>Warrior In Moonlight</p>
+      <a href="warrior in moonlight.jpg" download="wallpaper1.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="Serene village.jpg" alt="Wallpaper 2">
+      <p>Serene Village </p>
+      <a href="Serene village.jpg" download="wallpaper2.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="cosmic warrior.jpg" alt="Wallpaper 1">
+      <p>Cosmic Warrior</p>
+      <a href="cosmic warrior.jpg" download="wallpaper1.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="serene garden.jpg" alt="Wallpaper 2">
+      <p>Serene Garden</p>
+      <a href="serene garden.jpg" download="wallpaper2.jpg">Download</a>
+    </div>
+    <div class="wallpaper" data-category="pc,free">
+      <img src="Saitama.jpg" alt="Wallpaper 2">
+      <p>Saitama</p>
+      <a href="Saitama.jpg" download="wallpaper2.jpg">Download</a>
+    </div>
+  
+
+   
+    <!-- Add more wallpapers as needed -->
+  </main>
+  <script src="backend.js"></script>
+
+
+  <div class="Credits">
+    <p>Follow us on instagram : @unknown_paparazzo & @animated_boxzs_</p>
+    <p>Developed by Piyush Koli</p>
+    </div>
+</body>
+</html>
