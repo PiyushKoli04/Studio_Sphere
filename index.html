@@ -14,12 +14,13 @@
         <button id="searchButton" onclick="applyCombinedFilters()">Search</button>
       </div>
       <div id="filterContainer">
-        <button class="filterButton" onclick="applyCombinedFilters('all')">All</button>
-        <button class="filterButton" onclick="applyCombinedFilters('pc')">PC Wallpapers</button>
-        <button class="filterButton" onclick="applyCombinedFilters('mobile')">Mobile Wallpapers</button>
-        <button class="filterButton" onclick="applyCombinedFilters('free')">Free</button>
-        <button class="filterButton" onclick="applyCombinedFilters('premium')">Premium</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('all')">All</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('pc,free')">PC Free</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('pc,premium')">PC Premium</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('mobile,free')">Mobile Free</button>
+        <button class="filterButton" onclick="filterWallpapersByCategory('mobile,premium')">Mobile Premium</button>
       </div>
+
       
   </header>
   <main id="wallpaperGallery">
