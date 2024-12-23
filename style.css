@@ -54,7 +54,36 @@ body {
   .wallpaper a:hover {
     background-color: #12202b;
   }
+  .mwallpaper {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
   
+  .mwallpaper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mwallpaper a {
+    display: block;
+    padding: 10px;
+    background-color:#237da8 ;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .mwallpaper a:hover {
+    background-color: #12202b;
+  }
+  
+
   header div {
     display: flex;
     justify-content: center;
