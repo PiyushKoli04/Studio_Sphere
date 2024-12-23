@@ -10,15 +10,15 @@
   <header>
     <h1>Stroke Vision Art</h1>
       <div>
-        <input type="text" id="searchBar" placeholder="Search wallpapers..." oninput="filterWallpapers()">
-        <button id="searchButton" onclick="filterWallpapers()">Search</button>
+        <input type="text" id="searchBar" placeholder="Search wallpapers..." oninput="applyCombinedFilters()">
+        <button id="searchButton" onclick="applyCombinedFilters()">Search</button>
       </div>
       <div id="filterContainer">
-        <button class="filterButton" onclick="filterWallpapersByCategory('all')">All</button>
-        <button class="filterButton" onclick="filterWallpapersByCategory('pc')">PC Wallpapers</button>
-        <button class="filterButton" onclick="filterWallpapersByCategory('mobile')">Mobile Wallpapers</button>
-        <button class="filterButton" onclick="filterWallpapersByCategory('free')">Free</button>
-        <button class="filterButton" onclick="filterWallpapersByCategory('premium')">Premium</button>
+        <button class="filterButton" onclick="applyCombinedFilters('all')">All</button>
+        <button class="filterButton" onclick="applyCombinedFilters('pc')">PC Wallpapers</button>
+        <button class="filterButton" onclick="applyCombinedFilters('mobile')">Mobile Wallpapers</button>
+        <button class="filterButton" onclick="applyCombinedFilters('free')">Free</button>
+        <button class="filterButton" onclick="applyCombinedFilters('premium')">Premium</button>
       </div>
       
   </header>
