@@ -1,158 +1,168 @@
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-image: url(abstract\ wallpaper\ pc\ 2.jpg);
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    height: auto;
-    width: auto;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  .wallpaper {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
-    height: auto;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .wallpaper img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .wallpaper a {
-    display: block;
-    padding: 10px;
-    background-color:#237da8 ;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .wallpaper a:hover {
-    background-color: #12202b;
-  }
-  .mwallpaper {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
-    height: auto;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mwallpaper img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .mwallpaper a {
-    display: block;
-    padding: 10px;
-    background-color:#237da8 ;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .mwallpaper a:hover {
-    background-color: #12202b;
-  }
-  
+/* Header */
+header {
+  background-image: url('abstract wallpaper pc 2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
 
-  header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-/* Style for the filter buttons */
-#filterContainer {
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header div {
+  margin-top: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 20px 0;
 }
 
-.filterButton {
-  padding: 10px 20px;
-  border: none;
-  background-color: #b3bcc0b1;
-  color: white;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filterButton:hover {
-  background-color: #12273e;
-  transform: scale(1.1);
-}
-
-.filterButton:active {
-  background-color: #0a1c2b;
-}
-
-/* Active filter button style */
-.filterButton.active {
-  background-color: #0a1c2b;
-  color: #ffda44;
-  font-weight: bold;
-}
-
-/* Search Bar Style */
+/* Search Bar */
 #searchBar {
   padding: 10px;
-  width: 60%;
-  max-width: 400px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
 #searchButton {
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
+  border: none;
   background-color: #237da8;
   color: white;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
 }
 
 #searchButton:hover {
   background-color: #12273e;
 }
 
-  .Credits {
-    text-align: center;
-    color:#12273e;
+/* Filter Buttons */
+#filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filterButton {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #b3bcc0b1;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background-color: #12273e;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.wallpaper,
+.mwallpaper {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wallpaper img,
+.mwallpaper img {
+  width: 100%;
+  height: auto;
+}
+
+.wallpaper a,
+.mwallpaper a {
+  display: block;
+  padding: 10px;
+  background-color: #237da8;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.wallpaper a:hover,
+.mwallpaper a:hover {
+  background-color: #12202b;
+}
+
+/* Footer */
+.Credits {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #12273e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5em;
   }
 
-  
+  header div {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #searchBar {
+      width: 90%;
+  }
+
+  #searchButton {
+      width: 90%;
+  }
+
+  #filterContainer {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+  }
+
+  .filterButton {
+      width: 90%;
+      text-align: center;
+  }
+
+  main {
+      gap: 10px;
+  }
+
+  .wallpaper,
+  .mwallpaper {
+      width: 90%;
+  }
+}
