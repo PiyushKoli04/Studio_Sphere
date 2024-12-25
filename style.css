@@ -59,23 +59,25 @@ header div {
 /* Filter Buttons */
 #filterContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /* Allow wrapping if space is tight */
   justify-content: center;
-  gap: 20px;  /* Increased gap */
+  gap: 10px;  /* Adjusted gap for mobile */
   margin: 20px 0;
 }
 
+/* Individual Filter Button */
 .filterButton {
-  padding: 12px 20px;  /* Increased padding */
+  padding: 8px 15px;  /* Reduced padding for mobile */
   border: none;
   background-color: #b3bcc0b1;
   color: white;
-  font-size: 16px;  /* Larger font size */
-  border-radius: 25px;  /* Slightly bigger rounded corners */
+  font-size: 14px;  /* Adjusted font size */
+  border-radius: 25px;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
 }
 
+/* Filter Button Hover */
 .filterButton:hover {
   background-color: #12273e;
   transform: scale(1.05);
@@ -85,6 +87,19 @@ header div {
   background-color: #0a1c2b;
   color: #ffda44;
   font-weight: bold;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 600px) {
+  #filterContainer {
+    gap: 5px;  /* Reduced gap on mobile */
+    justify-content: flex-start;  /* Align to the left on smaller screens */
+  }
+
+  .filterButton {
+    font-size: 12px;  /* Smaller font size */
+    padding: 6px 12px;  /* Smaller padding for mobile */
+  }
 }
 
 /* Gallery Grid */
