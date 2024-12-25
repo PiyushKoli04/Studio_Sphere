@@ -1,177 +1,158 @@
-/* General Reset for Better Mobile Experience */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-image: url(abstract\ wallpaper\ pc\ 2.jpg);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
 
-/* Header Styling */
-header {
-  background-image: url('abstract wallpaper pc 2.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
-}
+  .wallpaper {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wallpaper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .wallpaper a {
+    display: block;
+    padding: 10px;
+    background-color:#237da8 ;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .wallpaper a:hover {
+    background-color: #12202b;
+  }
+  .mwallpaper {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mwallpaper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mwallpaper a {
+    display: block;
+    padding: 10px;
+    background-color:#237da8 ;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .mwallpaper a:hover {
+    background-color: #12202b;
+  }
+  
 
-header h1 {
-  margin: 0;
-  font-size: 36px;  /* Increased font size */
-  font-weight: bold;
-}
-
-/* Search Bar and Filters */
-header div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
-  gap: 20px;  /* Increased gap */
-}
-
-#searchBar {
-  flex: 1;
-  max-width: 400px;  /* Increased max-width */
-  padding: 15px;  /* Increased padding */
-  font-size: 18px;  /* Larger font size */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#searchButton {
-  padding: 15px 25px;  /* Increased padding */
-  font-size: 16px;  /* Larger font size */
-  border: none;
-  background-color: #237da8;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-#searchButton:hover {
-  background-color: #12273e;
-}
-
-/* Filter Buttons */
+  header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+/* Style for the filter buttons */
 #filterContainer {
   display: flex;
-  flex-wrap: wrap;  /* Allow wrapping if space is tight */
   justify-content: center;
-  gap: 10px;  /* Adjusted gap for mobile */
+  gap: 10px;
   margin: 20px 0;
 }
 
-/* Individual Filter Button */
 .filterButton {
-  padding: 8px 15px;  /* Reduced padding for mobile */
+  padding: 10px 20px;
   border: none;
   background-color: #b3bcc0b1;
   color: white;
-  font-size: 14px;  /* Adjusted font size */
+  font-size: 16px;
   border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
-/* Filter Button Hover */
 .filterButton:hover {
   background-color: #12273e;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
+.filterButton:active {
+  background-color: #0a1c2b;
+}
+
+/* Active filter button style */
 .filterButton.active {
   background-color: #0a1c2b;
   color: #ffda44;
   font-weight: bold;
 }
 
-/* Mobile-Specific Adjustments */
-@media (max-width: 600px) {
-  #filterContainer {
-    gap: 5px;  /* Reduced gap on mobile */
-    justify-content: flex-start;  /* Align to the left on smaller screens */
-  }
-
-  .filterButton {
-    font-size: 12px;  /* Smaller font size */
-    padding: 6px 12px;  /* Smaller padding for mobile */
-  }
-}
-
-/* Gallery Grid */
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Increased min-width */
-  gap: 30px;  /* Larger gap */
-  padding: 20px;
-  justify-items: center;
-}
-
-/* Individual Wallpaper Card */
-.wallpaper, .mwallpaper {
-  background: #f8f8f8;
+/* Search Bar Style */
+#searchBar {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 15px;  /* Slightly more rounded corners */
-  overflow: hidden;
-  width: 100%;
-  max-width: 250px;  /* Increased max-width */
-  text-align: center;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow */
-  transition: transform 0.2s, box-shadow 0.3s;
+  border-radius: 5px 0 0 5px;
 }
 
-.wallpaper img, .mwallpaper img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-
-.wallpaper:hover, .mwallpaper:hover {
-  transform: translateY(-7px);  /* Slightly more pronounced hover effect */
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Download Links */
-.wallpaper a, .mwallpaper a {
-  display: block;
-  padding: 15px;  /* Increased padding */
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
   background-color: #237da8;
   color: white;
-  text-decoration: none;
-  font-size: 16px;  /* Larger font size */
-  font-weight: bold;
-  border-radius: 0 0 8px 8px;  /* Slightly more rounded bottom corners */
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
 }
 
-.wallpaper a:hover, .mwallpaper a:hover {
-  background-color: #12202b;
+#searchButton:hover {
+  background-color: #12273e;
 }
 
-/* Credits Section */
-.Credits {
-  text-align: center;
-  color: #12273e;
-  font-size: 14px;
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(10px);
+  .Credits {
+    text-align: center;
+    color:#12273e;
   }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
 
-.wallpaper, .mwallpaper {
-  animation: fadeIn 0.5s ease-in-out;
-}
+  
