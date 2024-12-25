@@ -164,29 +164,7 @@
     
   </main>
   <script src="backend.js"></script>
-  <script>
-    function showDesktopMessage() {
-      const messageContainer = document.createElement('div');
-      messageContainer.id = 'desktopMessage';
-      messageContainer.innerHTML = `
-        <p>For the best experience, consider using the desktop site.</p>
-        <button onclick="closeDesktopMessage()">Close</button>
-      `;
-      document.body.appendChild(messageContainer);
-    }
-  
-    function closeDesktopMessage() {
-      const messageContainer = document.getElementById('desktopMessage');
-      if (messageContainer) {
-        messageContainer.style.display = 'none';
-      }
-    }
-  
-    // Display the message only for devices with a viewport width below 768px
-    if (window.innerWidth < 768) {
-      document.addEventListener('DOMContentLoaded', showDesktopMessage);
-    }
-  </script>
+ 
   
 
 
