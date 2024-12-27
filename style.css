@@ -19,71 +19,40 @@ body {
   }
   
   main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid; /* Use CSS Grid for better control over layout */
+    gap: 20px; /* Space between wallpapers */
     padding: 20px;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    justify-content: center; /* Center the grid */
   }
-
-  .wallpaper {
+  
+  .wallpaper, .mwallpaper {
     background: #f8f8f8;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    width: 300px;
-    height: auto;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .wallpaper img {
+  .wallpaper img, .mwallpaper img {
     width: 100%;
     height: auto;
   }
   
-  .wallpaper a {
+  .wallpaper a, .mwallpaper a {
     display: block;
     padding: 10px;
-    background-color:#237da8 ;
+    background-color: #237da8;
     color: white;
     text-decoration: none;
     font-size: 16px;
   }
   
-  .wallpaper a:hover {
-    background-color: #12202b;
-  }
-  .mwallpaper {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
-    height: auto;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mwallpaper img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .mwallpaper a {
-    display: block;
-    padding: 10px;
-    background-color:#237da8 ;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .mwallpaper a:hover {
+  .wallpaper a:hover, .mwallpaper a:hover {
     background-color: #12202b;
   }
   
-
   header div {
     display: flex;
     justify-content: center;
