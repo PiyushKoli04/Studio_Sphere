@@ -42,6 +42,7 @@ body {
   
   .wallpaper a, .mwallpaper a {
     display: block;
+    size-adjust: auto;
     padding: 10px;
     background-color: #237da8;
     color: white;
@@ -67,8 +68,8 @@ body {
   justify-content: center;
   gap: 10px;
   margin: 20px 0;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scrollbar-width: none; /* Hide scrollbar for modern browsers */
+  overflow-x:auto; /* Enable horizontal scrolling */
+  scrollbar-width: auto; /* Hide scrollbar for modern browsers */
 }
 
 #filterContainer::-webkit-scrollbar {
