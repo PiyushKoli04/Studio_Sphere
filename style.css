@@ -132,6 +132,8 @@ body {
 /* Responsive design adjustments */
 @media (max-width: 768px) {
   .filterButton {
+    display: flex;
+    justify-content: start;
     padding: 8px 12px; /* Smaller padding for smaller screens */
     font-size: 12px; /* Adjust font size further */
   }
