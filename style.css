@@ -25,7 +25,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     justify-content: center; /* Center the grid */
   }
-  
+  .p{
+    text-size-adjust: auto;
+  }
   .wallpaper, .mwallpaper {
     background: #f8f8f8;
     border: 1px solid #ddd;
