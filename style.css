@@ -92,22 +92,30 @@ body {
   }
   
 /* Style for the filter buttons */
+/* Style for the filter buttons */
 #filterContainer {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 20px 0;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for modern browsers */
+}
+
+#filterContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
 }
 
 .filterButton {
-  padding: 10px 20px;
+  padding: 10px 15px; /* Slightly smaller padding */
   border: none;
   background-color: #b3bcc0b1;
   color: white;
-  font-size: 16px;
+  font-size: 14px; /* Adjusted font size */
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
 .filterButton:hover {
@@ -117,14 +125,25 @@ body {
 
 .filterButton:active {
   background-color: #0a1c2b;
-}
-
-/* Active filter button style */
-.filterButton.active {
-  background-color: #0a1c2b;
-  color: #ffda44;
+  color: yellow;
   font-weight: bold;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .filterButton {
+    padding: 8px 12px; /* Smaller padding for smaller screens */
+    font-size: 12px; /* Adjust font size further */
+  }
+}
+
+@media (max-width: 480px) {
+  .filterButton {
+    padding: 6px 10px; /* Further reduce padding for very small screens */
+    font-size: 11px; /* Reduce font size for smaller screens */
+  }
+}
+
 
 /* Search Bar Style */
 #searchBar {
