@@ -75,16 +75,3 @@ function applyCombinedFilters(filter = "all") {
   });
 }
 
-// Attach event listeners to buttons and search bar
-document.querySelectorAll(".filterButton").forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.innerText.toLowerCase().replace(" ", ",");
-    applyCombinedFilters(filter);
-  });
-});
-
-document.getElementById("searchBar").addEventListener("input", () => {
-  const activeFilter = document.querySelector(".filterButton.active");
-  const filter = activeFilter ? activeFilter.innerText.toLowerCase().replace(" ", ",") : "all";
-  applyCombinedFilters(filter);
-});
