@@ -1,2 +1,2 @@
-# stroke-vision
+# Piyush Koli
 wallpaper gallery
